@@ -34,6 +34,12 @@ const SkillsSection = () => {
     ]
     return (
         <>
+
+                <section id="Skills" className="my-20 max-w-screen-lg mx-auto flex flex-col justify-center items-center">
+
+                    <h2 className="text-4xl mb-8 font-medium text-center">
+                        Skills
+                    </h2>
             <AnimatedContent
                 distance={150}
                 direction="vertical"
@@ -44,12 +50,6 @@ const SkillsSection = () => {
                 scale={1}
                 threshold={0.2}
             >
-
-                <section id="Skills" className="my-20 max-w-screen-lg mx-auto flex flex-col justify-center items-center">
-
-                    <h2 className="text-4xl mb-8 font-medium text-center">
-                        Skills
-                    </h2>
                     <div className="inline-flex flex-wrap justify-start md:justify-center">
                         {skills.map((skill) => (
 
@@ -63,8 +63,8 @@ const SkillsSection = () => {
                             </div>
                         ))}
                     </div>
-                </section>
             </AnimatedContent>
+                </section>
 
         </>
     )

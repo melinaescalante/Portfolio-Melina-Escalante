@@ -2,6 +2,7 @@ import { useState } from 'react'
 import HomeSection from './sections/HomeSection'
 import './App.css'
 import SkillsSection from './sections/SkillsSection'
+import Footer from './components/Footer'
 import ProjectsSection from './sections/ProjectsSection'
 import ContactSection from './sections/ContactSection'
 import AboutMeSection from './sections/AboutMeSection'
@@ -14,7 +15,7 @@ function App() {
   <ProjectsSection></ProjectsSection>
    <SkillsSection></SkillsSection>
    <AboutMeSection></AboutMeSection>
-   <ContactSection></ContactSection>
+   <Footer></Footer>
       </>
   )
 }

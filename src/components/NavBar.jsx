@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const sections = ['About me', 'Skills', 'Projects', 'Contact']
+    const sections = ['Skills', 'Projects', 'About me']
 
     return (
         <nav className="relative text-end p-4 z-0">
@@ -26,11 +26,12 @@ const NavBar = () => {
                         d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
                     />
                 </svg>
+                <span className="sr-only">Menu</span>
             </button>
             <div className="grid grid-cols-2">
                 <div>
 
-                    <p className="p-4 top-1 absolute  md:left-0 md:block">Melina Escalante</p>
+                    <a className="p-4 top-1 absolute  md:left-0 md:block hover:text-sky-300 hover:font-medium" href="/">Melina Escalante</a>
                 </div>
 
                 <ul
@@ -38,7 +39,7 @@ const NavBar = () => {
                         }`}
                 >
                     {sections.map((section) => (
-                        <li className="p-4 text-white md:hover:bg-transparent " key={section}><a href={`#${section}`} className="hover:text-sky-300 hover:transition-colors">{section}</a></li>
+                        <li className="p-4 text-white md:hover:bg-transparent " key={section}><a href={`#${section}`} className="hover:text-sky-300 hover:transition-colors focus:ring-2  focus:ring-sky-300 focus:outline-none focus:rounded-sm   ">{section}</a></li>
                     ))}
 
 
