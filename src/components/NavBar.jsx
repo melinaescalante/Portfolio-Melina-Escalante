@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const sections = ['Skills', 'Projects', 'About me']
+    const sections = ['Projects', 'Skills', 'About me']
 
     return (
         <nav className="relative text-end p-4 z-0">
@@ -31,7 +31,7 @@ const NavBar = () => {
             <div className="grid grid-cols-2">
                 <div>
 
-                    <a className="p-4 top-1 absolute  md:left-0 md:block hover:text-sky-300 hover:font-medium" href="/">Melina Escalante</a>
+                    <a className="p-4 top-1 absolute  md:left-0 md:block hover:text-sky-400 hover:font-medium" href="/">Melina Escalante</a>
                 </div>
 
                 <ul

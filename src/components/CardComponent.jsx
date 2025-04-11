@@ -12,7 +12,7 @@ const CardComponent = ({ obj }) => {
 
         </div>
         <p className="pt-0 p-2 my-0" dangerouslySetInnerHTML={{ __html: obj.description }}></p>
-        {obj.title === 'E-commerce desing' && <a href="https://www.figma.com/proto/TZZeSDoGz8YI69vKW4WYN5/Prototipado-Luana-Beauty?node-id=23-2&p=f&t=bRN1vF5kO45fMe4C-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" className="hover:underline hover:decoration-1 font-medium ps-2 focus:ring-2 focus:outline-none focus:rounded-sm focus:ring-sky-200 ">Prototype</a>}
+        {obj.title === 'E-commerce desing' && <a href="https://www.figma.com/proto/TZZeSDoGz8YI69vKW4WYN5/Prototipado-Luana-Beauty?node-id=23-2&p=f&t=bRN1vF5kO45fMe4C-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" target="_blank" className="hover:underline hover:decoration-1 font-bold ps-2 focus:ring-2 focus:outline-none focus:rounded-sm focus:ring-sky-200 ">Prototype</a>}
         <div className="flex flex-wrap p-2">
 
             {obj.tecnologies.map((tec) => (

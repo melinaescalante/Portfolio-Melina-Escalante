@@ -18,7 +18,7 @@ const HomeSection = () => {
                     <h1 className=' font-bold text-5xl'>Melina Escalante</h1>
 
                     <p className='break-words text-lg'><span className='font-bold  text-sky-400'>Full-Stack Developer</span> passionate about creating functional, intuitive and attractive websites and applications.</p>
-                    <p className='break-words text-lg'>I create designs tailored to each client, prioritizing their tastes and accessibility.</p>
+                    <p className='break-words text-lg'>I create designs personalized  to each client, prioritizing their preferences and accessibility.</p>
                     <div className='flex items-center gap-2'>
                         <svg className='fill-gray-500 h-6 w-6' viewBox="0 0 297 297" >
                             <g>
@@ -41,9 +41,9 @@ const HomeSection = () => {
 
                 </div>
 
-            </div>  <div className='flex flex-col gap-3 items-center my-8'>
-                <img src="" alt="" height={250} width={250} className='rounded-full' />
-                <a title='Dowload Resume' download='Melina-Micaela-Escalante-CV.pdf' href='/Melina-Micaela-Escalante-CV.pdf' className='p-4 flex items-center gap-2 justify-center py-2 rounded-md shadow-button hover:translate-y-[-3px] duration-[0.5s] hover:bg-[#024a7154]'><span><svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            </div>  <div className='flex flex-col gap-5 items-center my-8'>
+                <img src="/melina_escalante.jpg" alt="Melina Escalante desarrolladora y diseñadora web."    className='rounded-full h-72 ' />
+                <a title='Dowload Resume' download='Melina-Micaela-Escalante-Resume.pdf' href='/Melina-Micaela-Escalante-CV.pdf' className='p-4 font-semibold flex items-center gap-2 justify-center  rounded-md shadow-button hover:translate-y-[-3px] duration-[0.5s] hover:bg-[#024a7154]'><span><svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" d="M13 11.15V4a1 1 0 1 0-2 0v7.15L8.78 8.374a1 1 0 1 0-1.56 1.25l4 5a1 1 0 0 0 1.56 0l4-5a1 1 0 1 0-1.56-1.25L13 11.15Z" clip-rule="evenodd" />
                     <path fill-rule="evenodd" d="M9.657 15.874 7.358 13H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-2.358l-2.3 2.874a3 3 0 0 1-4.685 0ZM17 16a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2H17Z" clip-rule="evenodd" />
                 </svg>
