@@ -37,7 +37,7 @@ const SkillsSection = () => {
 
                 <section id="Skills" className="my-20 max-w-screen-lg mx-auto flex flex-col justify-center items-center">
 
-                    <h2 className="text-4xl mb-8 font-medium text-center">
+                    <h2 className="text-4xl mb-8 font-medium text-start md:text-center self-start ms-4">
                         Skills
                     </h2>
             <AnimatedContent
@@ -50,7 +50,7 @@ const SkillsSection = () => {
                 scale={1}
                 threshold={0.2}
             >
-                    <div className="inline-flex flex-wrap justify-start md:justify-center">
+                    <div className="p-4 inline-flex flex-wrap justify-start md:justify-center">
                         {skills.map((skill) => (
 
                             <div key={skill.name} className="flex m-1 gap-1 items-center justify-center border border-sky-200 p-0.5 rounded-lg">
