@@ -31,7 +31,7 @@ const NavBar = () => {
             <div className="grid grid-cols-2">
                 <div>
 
-                    <a className="p-4 top-1 absolute -left-0  md:left-0 z-50 md:block hover:text-sky-400 hover:font-medium" href="/">Melina Escalante</a>
+                    <a className="p-4 top-1 absolute left-2.5  md:left-0 z-50 md:block hover:text-sky-400 hover:font-medium" href="/">Melina Escalante</a>
                 </div>
 
                 <ul
