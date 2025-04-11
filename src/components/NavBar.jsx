@@ -35,7 +35,7 @@ const NavBar = () => {
                 </div>
 
                 <ul
-                    className={`absolute z-0 text-end items-center justify-end top-full left-0 w-full bg-[#121212] h-[100vh]  font-medium transform transition-transform duration-500 ease-in-out md:static md:flex md:translate-y-0 md:space-x-4 md:bg-transparent ${isOpen ? "translate-y-[0] -z-100" : "-translate-y-[150%] -z-100"
+                    className={`absolute z-0 text-end items-center justify-end top-full left-0 w-full bg-[#121212] h-[100vh] md:h-auto font-medium transform transition-transform duration-500 ease-in-out md:static md:flex md:translate-y-0 md:space-x-4 md:bg-transparent ${isOpen ? "translate-y-[0] -z-100" : "-translate-y-[150%] -z-100"
                         }`}
                 >
                     {sections.map((section) => (
