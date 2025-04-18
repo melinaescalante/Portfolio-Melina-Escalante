@@ -37,7 +37,7 @@ const SkillsSection = () => {
 
                 <section id="Skills" className="my-20 max-w-screen-lg mx-auto flex flex-col justify-center items-center">
 
-                    <h2 className="text-4xl mb-8 font-medium text-start md:text-center self-start ms-4">
+                    <h2 className="text-4xl mb-8 font-medium text-start md:text-center md:self-center self-start ms-4">
                         Skills
                     </h2>
             <AnimatedContent
