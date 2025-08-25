@@ -29,10 +29,10 @@ const NavBar = () => {
                 <span className="sr-only">Menu</span>
             </button>
             <div className="grid grid-cols-2">
-                <div>
+                {/* <div>
 
-                    <a className="p-4 top-1 absolute left-2.5  md:left-0 z-50 md:block hover:text-sky-400 hover:font-medium" href="/">Melina Escalante</a>
-                </div>
+                    <a className={`p-4 top-1 absolute md:block left-2.5 ${isOpen?"hidden":"block"} md:left-0 z-50  hover:text-sky-400 hover:font-medium`} href="/">Melina Escalante</a>
+                </div> */}
 
                 <ul
                     className={`absolute z-0 text-end items-center justify-end top-full left-0 w-full bg-[#121212] h-[100vh] md:h-auto font-medium transform transition-transform duration-500 ease-in-out md:static md:flex md:translate-y-0 md:space-x-4 md:bg-transparent ${isOpen ? "translate-y-[0] -z-100" : "-translate-y-[150%] -z-100"
