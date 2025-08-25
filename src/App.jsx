@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+    <input type='hidden' value=''></input>
   <HomeSection></HomeSection>
   <ProjectsSection></ProjectsSection>
    <SkillsSection></SkillsSection>

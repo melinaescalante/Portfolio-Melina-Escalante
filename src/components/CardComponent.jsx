@@ -17,7 +17,7 @@ const CardComponent = ({ obj }) => {
 
             {obj.tecnologies.map((tec) => (
                     <div key={tec.name} className="flex m-1  gap-1 items-center justify-center border border-sky-200 p-0.5 rounded-lg">
-                        {tec.image && (<p className="h-4 fill-white w-4 flex items-center " dangerouslySetInnerHTML={{ __html: tec.image }}></p>
+                        {tec.image && (<span className="h-4 fill-white w-4 flex items-center " dangerouslySetInnerHTML={{ __html: tec.image }}></span>
                         )}
                         <p className="font-medium">{tec.name}</p>
                     </div>
