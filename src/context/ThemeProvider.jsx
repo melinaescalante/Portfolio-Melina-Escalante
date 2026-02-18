@@ -10,7 +10,7 @@ const ThemeProvider = ({children}) => {
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
-  return <ThemeContext value={{ theme, setTheme }}>{children}</ThemeContext>;
+  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
 };
 
 export default ThemeProvider;
