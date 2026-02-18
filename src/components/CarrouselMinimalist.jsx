@@ -39,10 +39,10 @@ const CarouselMinimalist = ({ items, imageStyle }) => {
           </SwiperSlide>
         ))}
 
-        {/* Controles personalizados minimalistas */}
+      
         <div className="flex justify-between items-center mt-4">
           <div className="flex gap-4">
-            <button className="prev-btn p-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors text-gray-500 hover:text-gray-800">
+            <button className="prev-btn p-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors text-gray-500 dark:text-gray-300 hover:text-gray-800 dark:hover:bg-gray-100/30">
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -57,7 +57,7 @@ const CarouselMinimalist = ({ items, imageStyle }) => {
                 />
               </svg>
             </button>
-            <button className="next-btn p-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors text-gray-500 hover:text-gray-800">
+            <button className="next-btn p-2 border border-gray-200 rounded-full hover:bg-gray-50 transition-colors text-gray-500 dark:hover:bg-gray-100/30 dark:text-gray-300 hover:text-gray-800">
               <svg
                 className="w-4 h-4"
                 fill="none"

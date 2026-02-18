@@ -1,7 +1,6 @@
 const CardComponent = ({ obj }) => {
   return (
-    // hover:bg-[#024a7154]
-    <div className={`border border-blue-400 hover: flex flex-col rounded-lg justify-between shadow-card hover:translate-y-[-5px]  hover:duration-500 hover:bg-icon ${obj.styles}`}>
+    <div className={`border border-blue-400 hover: flex flex-col rounded-lg justify-between shadow-card/20 hover:translate-y-[-5px]  hover:duration-500 hover:bg-icon ${obj.styles}`}>
       <div className="flex flex-col ">
         <div className="w-full overflow-hidden rounded-t-lg">
           <span className="absolute z-10 bg-black/60 text-white text-xs px-2 py-1 m-2 rounded">
@@ -24,7 +23,7 @@ const CardComponent = ({ obj }) => {
             <span>{obj.title}</span>
             <span className="w-6 h-6">
               <svg
-                class="w-6 h-6  dark:fill-white fill-black "
+                className="w-6 h-6  dark:fill-white fill-black "
                 aria-hidden="true"
                 width="24"
                 height="24"
