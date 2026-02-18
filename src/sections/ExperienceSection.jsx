@@ -1,53 +1,86 @@
+import AnimatedContent from "@/components/AnimatedContent/AnimatedContent";
+import Title from "@/components/Title";
 const ExperienceSection = () => {
   const jobs = [
     {
       position: "FrontEnd Developer",
       company: "Bisstrack Software",
       from: "May 2025",
-      to: "present",
-      description: "lorem ipsum",
+      to: "Present",
+      description: [
+        "Modern SPAs: Developed dynamic features with Vue.js or Nuxt.js.",
+        "UI/UX & Components: Built responsive interfaces using Vuetify and reusable components.",
+        "APIs & Security: Integrated REST APIs and secure JWT authentication.",
+        // "Scalability: Focused on scalable architecture and process automation.",
+        "Agile: Collaborative version control using Git in Agile teams.",
+      ],
     },
   ];
+
   return (
-    <section id="experience" className="max-w-screen-lg mx-auto my-28">
-      <h2 className="text-4xl text-start md:text-center font-medium mb-8 ms-4 ">
-        Experience
-      </h2>
-      <div className="relative px-2 mx-2 z-0">
-        <ul className="border-l-1 border-blue-950 ">
-          {jobs.map((job) => (
-            <li className="mb-8 md:mb-6 ml-8 " key={job.position}>
-              <span className="  absolute flex items-center justify-center w-5.5 h-6 bg-white rounded-full -left-0.5 ring-5 ring-blue-400 dark:ring-dark-950 dark:bg-dark-600">
-                <svg
-                  aria-hidden="true"
-                  className="w-4 h-4 text-primary-100 dark:text-primary-100"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </span>
-              <p>
-                <span className="font-medium">{job.position}</span> -{" "}
-                <span className="font-light">{job.company}</span>
-                <p className="font-light"  >
-                  {job.from} - {job.to}
-                </p>
-                <p>
-                 Development of new views and features for Single Page Applications using Vue.js and Nuxt.js, with Vuetify for UI components. Focus on reusable components and a scalable architecture, integration with REST APIs for data consumption and process automation, implementation of JWT-based authentication, and collaborative work using Git in agile environments.
-                </p>
-              </p>
-            </li>
-            //   <CardComponent key={project.title} obj={project}></CardComponent>
-          ))}
-        </ul>{" "}
-      </div>
-    </section>
+    <AnimatedContent>
+      {/* Cambiamos a max-w-7xl para igualar tus otras secciones */}
+      <section
+        id="experience"
+        className="max-w-7xl mx-auto py-24 px-6 md:px-12"
+      >
+        <Title title="Experience" />
+
+        <div className="relative">
+          {/* Línea de tiempo pegada a la izquierda para aprovechar el ancho 7xl */}
+          <div className="absolute left-0 top-0 h-full w-[1px] bg-gray-300"></div>
+
+          <ul className="space-y-20">
+            {jobs.map((job, index) => (
+              <li key={index} className="relative pl-10">
+                {/* Punto  sobre la línea */}
+                <div className="absolute left-[-4.5px] top-2 w-2 h-2 rounded-full dark:bg-blue-300 bg-blue-400 z-10"></div>
+
+                {/* Grid de 2 columnas */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                  {/* Info Principal  */}
+                  <div className="md:col-span-4">
+                    <h3 className="text-xl font-semibold text-gray-800 dark:text-white tracking-tight">
+                      {job.position}
+                    </h3>
+                    <p className="text-base text-gray-500 dark:text-gray-300 mt-1">
+                      {job.company}
+                    </p>
+                    <p className="text-xs mt-4 uppercase tracking-[0.2em] text-gray-600 dark:text-gray-300 font-medium">
+                      {job.from} — {job.to}
+                    </p>
+                  </div>
+
+                  {/*  Detalles*/}
+                  <div className="md:col-span-8">
+                    
+
+                    {/* Descripcion*/}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+                      {job.description.map((item, i) => {
+                     
+                        const [title, text] = item.split(":");
+                        return (
+                          <div key={i} className="group">
+                            <h4 className="text-[10px] uppercase tracking-[0.2em] text-blue-600 dark:text-blue-400 font-bold mb-1">
+                              {title}
+                            </h4>
+                            <p className="text-sm text-gray-600 dark:text-gray-100 leading-snug group-hover:text-gray-800 transition-colors">
+                              {text}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </AnimatedContent>
   );
 };
+
 export default ExperienceSection;
