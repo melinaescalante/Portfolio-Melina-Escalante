@@ -28,7 +28,7 @@ const ExperienceSection = () => {
 
         <div className="relative">
           {/* Línea de tiempo pegada a la izquierda para aprovechar el ancho 7xl */}
-          <div className="absolute left-0 top-0 h-full w-[1px] bg-gray-300"></div>
+          <div className="absolute left-0 top-0 h-full w-px bg-gray-300"></div>
 
           <ul className="space-y-20">
             {jobs.map((job, index) => (

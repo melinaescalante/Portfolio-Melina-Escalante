@@ -183,7 +183,7 @@ const SkillsSection = () => {
     <>
       <section
         id="skills"
-        className="my-24 max-w-7xl mx-auto flex flex-col justify-center items-center"
+        className="my-24 mb-15 max-w-7xl mx-auto flex flex-col justify-center items-center"
       >
         <Title title="Skills" />
         <div className="flex flex-col gap-4 w-full ">
