@@ -2,9 +2,9 @@ const CardComponentMinimalist = ({ obj , imageStyle} ) => {
   return (
     <>
 
-      <div className="group h-full flex-1 flex border-gray-300 border flex-col md:flex-row items-center gap-6 p-6 border-b border-gray-100 ">
+      <div className="group h-full flex-1 flex border-gray-300 border flex-col md:flex-row items-center gap-6 p-6 border-b  ">
         {/* Imagen: Contenedor pequeño y minimalista */}
-        <div className="flex-grow flex flex-col gap-2 space-y-1 text-center md:text-left">
+        <div className="grow flex flex-col gap-2 space-y-1 text-center md:text-left">
         <p className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-300">{obj.type}</p>
           <h2 className="text-lg font-semibold dark:text-gray-200 text-gray-800 tracking-tight">
             {obj.title}
@@ -92,7 +92,7 @@ const CardComponentMinimalist = ({ obj , imageStyle} ) => {
             </div>
           )}
         </div>
-        <div className={`${imageStyle}  flex-shrink-0 overflow-hidden rounded-xl bg-gray-100`}>
+        <div className={`${imageStyle}  shrink-0 overflow-hidden rounded-xl bg-gray-100`}>
           <img
             src={obj.image}
             alt={obj.title}
