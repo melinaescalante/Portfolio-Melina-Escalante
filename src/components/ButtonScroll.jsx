@@ -10,7 +10,7 @@ const ScrollIndicator = () => {
   
         <span className="relative text-[10px] md:text-xs tracking-[0.3em] uppercase text-gray-500 dark:text-gray-400 group-hover:text-slate-900 transition-colors duration-300 overflow-hidden">
           <span className="relative z-10">Explore</span>
-          <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-black/10 to-transparent"></span>
+          <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-black/10 to-transparent dark:from-transparent dark:via-white/20 dark:to-transparent"></span>
         </span>
 
 
