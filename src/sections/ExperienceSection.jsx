@@ -22,7 +22,7 @@ const ExperienceSection = () => {
       {/* Cambiamos a max-w-7xl para igualar tus otras secciones */}
       <section
         id="experience"
-        className="max-w-7xl mx-auto py-24 px-6 md:px-12"
+        className="max-w-7xl mx-auto md:py-24 py-20 pb-10 px-6 md:px-12"
       >
         <Title title="Experience" />
 

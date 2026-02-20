@@ -7,12 +7,11 @@ const HomeSection = () => {
   return (
     <>
       <NavBar />
-      <ButtonMode />
       <section
         id="home"
-        className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-36 items-center max-w-7xl mx-auto min-h-screen  px-6 md:px-12"
+        className="grid grid-cols-1 md:grid-cols-12 gap-12 pt-25 md:pt-36 items-center max-w-7xl mx-auto min-h-screen  px-6 md:px-12"
       >
-        {/* Lado Izquierdo: Contenido (7 de 12 columnas) */}
+      
         <div className="md:col-span-7 flex flex-col gap-8">
           <div className="space-y-4">
             
@@ -74,7 +73,7 @@ const HomeSection = () => {
             <img
               src="/melina_escalante.jpg"
               alt="Melina Escalante"
-              className="w-90 h-96 md:w-90 md:h-[480px] object-cover rounded-[32px] grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl"
+              className="w-90 h-90 md:w-90 lg:h-[480px] object-cover rounded-[32px] grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl"
             />
          
           </div>

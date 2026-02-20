@@ -23,7 +23,7 @@ const AboutMeSection = () => {
     },
   ];
   return (
-    <section id="about-me" className="max-w-7xl mx-auto py-32 px-6">
+    <section id="about-me" className="max-w-7xl mx-auto md:py-32 py-18 pb-10 px-6">
       <Title title="About me" />
 
       <div className="grid md:grid-cols-12 grid-cols-1 gap-12 items-center">
