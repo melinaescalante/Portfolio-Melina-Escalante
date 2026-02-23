@@ -166,12 +166,12 @@ const SkillsSection = () => {
       node: (
         <div className="flex items-center gap-2 border border-blue-200 p-2 rounded-lg bg-white dark:bg-zinc-900 shadow-sm whitespace-nowrap">
           {skill.image && (
-            <span height={20}
-            width={20}
-              className="h-5 w-5 flex items-center"
-              dangerouslySetInnerHTML={{ __html: skill.image }}
-            />
-          )}
+  <div 
+    className="h-5 w-5 flex items-center justify-center"
+    style={{ color: 'inherit' }} // Permite que el color fluya
+    dangerouslySetInnerHTML={{ __html: skill.image }} 
+  />
+)}
           <span className="font-medium uppercase tracking-widest text-gray-600 dark:text-gray-200 text-xs">
             {skill.name}
           </span>
