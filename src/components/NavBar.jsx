@@ -70,8 +70,8 @@ const NavBar = () => {
                       href={`#${section.id}`}
                       className={`px-4 py-2 block rounded-full text-[10px] uppercase tracking-[0.2em] font-bold transition-all ${
                         active === section.id 
-                          ? "text-blue-600 bg-blue-50 dark:bg-gray-800 shadow-sm" 
-                          : "text-gray-600 hover:text-black dark:text-gray-400 dark:hover:text-white"
+                          ? "text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-gray-800 shadow-sm" 
+                          : "text-gray-600 hover:text-black dark:text-gray-200 dark:hover:text-white"
                       }`}
                     >
                       {section.name}

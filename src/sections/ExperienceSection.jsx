@@ -34,7 +34,7 @@ const ExperienceSection = () => {
             {jobs.map((job, index) => (
               <li key={index} className="relative pl-10">
                 {/* Punto  sobre la línea */}
-                <div className="absolute left-[-4.5px] top-2 w-2 h-2 rounded-full dark:bg-blue-300 bg-blue-400 z-10"></div>
+                <div className="absolute -left-[3.5px] top-2 w-2 h-2 rounded-full dark:bg-blue-300 bg-blue-400 z-10"></div>
 
                 {/* Grid de 2 columnas */}
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8">

@@ -216,6 +216,7 @@ const ProjectsSection = () => {
     },
   ];
   const featureProjects = projects.slice(0, 3);
+  const allProjects = projects.slice(3, 6);
   return (
     <section id="projects" className="max-w-7xl mx-auto md:my-20 my-15 mb-10 px-5">
       <Title title="Projects" />
@@ -229,7 +230,7 @@ const ProjectsSection = () => {
         ))}
       </div>
       <div className="w-full">
-        <CarouselMinimalist imageStyle="md:w-50 md:h-40 w-full max-w-100 h-40" items={projects} />
+        <CarouselMinimalist imageStyle="md:w-50 md:h-40 w-full max-w-100 h-40" items={allProjects} />
       </div>
     </section>
   );

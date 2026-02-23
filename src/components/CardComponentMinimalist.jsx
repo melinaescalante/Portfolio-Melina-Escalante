@@ -2,19 +2,19 @@ const CardComponentMinimalist = ({ obj , imageStyle} ) => {
   return (
     <>
 
-      <div className="group h-full flex-1 flex border-gray-300 border flex-col md:flex-row items-center gap-6 p-6 border-b  ">
+      <div className="group h-full flex-1 flex border-gray-300 border flex-col md:flex-row items-center gap-6 p-6 border-b text-start ">
         {/* Imagen: Contenedor pequeño y minimalista */}
         <div className="grow flex flex-col gap-2 space-y-1 text-center md:text-left">
-        <p className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-300">{obj.type}</p>
-          <h2 className="text-lg font-semibold dark:text-gray-200 text-gray-800 tracking-tight">
+        <p className="text-xs uppercase tracking-widest text-gray-500 dark:text-gray-300 text-start">{obj.type}</p>
+          <h2 className="text-lg font-semibold dark:text-gray-200 text-gray-800 tracking-tight text-start">
             {obj.title}
           </h2>
-          <p className="text-sm text-gray-600 dark:text-white leading-relaxed max-w-xl">
+          <p className="text-sm text-gray-600 dark:text-white leading-relaxed max-w-xl text-start">
             {obj.description}
           </p>
 
           {/* Tags de tecnología muy sutiles */}
-          <div className="flex flex-wrap gap-2 pt-2 justify-center md:justify-start">
+          <div className="flex flex-wrap gap-2 pt-2 justify-start">
             {obj.tecnologies?.map((tag) => (
               <span
                 key={tag.name}
