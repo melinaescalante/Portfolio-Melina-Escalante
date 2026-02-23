@@ -168,8 +168,8 @@ const SkillsSection = () => {
           {skill.image && (
             <div className="h-5 w-5 flex items-center">
               <span
-                height={20}
-                width={20}
+                height="20"
+                width="20"
                 className="h-full w-full flex items-center"
                 dangerouslySetInnerHTML={{ __html: skill.image }}
               />
