@@ -17,8 +17,8 @@ const HomeSection = () => {
             
             
             <h1 className="text-xl md:text-5xl font-light text-gray-900 dark:text-gray-300 leading-tight">
-              <span className="text-4xl">I'm <span className="font-semibold text-black dark:text-white">Melina</span><br /></span>
-              <span className="text-blue-600 font-bold italic">
+              <span className="md:text-4xl text-2xl">I'm <span className="font-semibold text-black dark:text-white">Melina</span><br /></span>
+              <span className="text-3xl text-blue-600 font-bold italic">
                 <TextType
                   text="FullStack Developer"
                   typingSpeed={60}
