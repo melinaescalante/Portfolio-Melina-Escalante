@@ -3,7 +3,7 @@ import LogoLoop from "@/components/LogoLoop";
 import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 const SkillsSection = () => {
-    const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useContext(ThemeContext);
   const skills = [
     {
       name: "HTML",
@@ -166,12 +166,15 @@ const SkillsSection = () => {
       node: (
         <div className="flex items-center gap-2 border border-blue-200 p-2 rounded-lg bg-white dark:bg-zinc-900 shadow-sm whitespace-nowrap">
           {skill.image && (
-  <div 
-    className="h-5 w-5 flex items-center justify-center"
-    style={{ color: 'inherit' }} // Permite que el color fluya
-    dangerouslySetInnerHTML={{ __html: skill.image }} 
-  />
-)}
+            <div className="h-5 w-5 flex items-center">
+              <span
+                height={20}
+                width={20}
+                className="h-full w-full flex items-center"
+                dangerouslySetInnerHTML={{ __html: skill.image }}
+              />
+            </div>
+          )}
           <span className="font-medium uppercase tracking-widest text-gray-600 dark:text-gray-200 text-xs">
             {skill.name}
           </span>
@@ -201,7 +204,7 @@ const SkillsSection = () => {
               height: "auto",
               overflowX: "hidden",
             }}
-            fadeOutColor={theme==="light"?'#f7f4f4':'#121212'}
+            fadeOutColor={theme === "light" ? "#f7f4f4" : "#121212"}
           />
           {/* Fila 2: Hacia la derecha (Reverse) */}
           <LogoLoop
@@ -211,7 +214,7 @@ const SkillsSection = () => {
             speed={20}
             useCustomRender={true}
             fadeOut={true}
-            fadeOutColor={theme==="light"?'#f7f4f4':'#121212'}
+            fadeOutColor={theme === "light" ? "#f7f4f4" : "#121212"}
             style={{
               margin: "0 auto",
               height: "auto",
@@ -231,7 +234,7 @@ const SkillsSection = () => {
             speed={25}
             useCustomRender={true}
             fadeOut={true}
-            fadeOutColor={theme==="light"?'#f7f4f4':'#121212'}
+            fadeOutColor={theme === "light" ? "#f7f4f4" : "#121212"}
           />
         </div>
       </section>
